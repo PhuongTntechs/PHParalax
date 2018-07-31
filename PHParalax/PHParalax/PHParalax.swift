@@ -11,8 +11,8 @@ import UIKit
 
 public protocol PHParalaxFlowLayoutDelegate: class {
     //
-    var numberOfColumns: Int {get set}
-    var paddingForCell: CGFloat {get set}
+    var numberOfColumns: Int {get}
+    var paddingForCell: CGFloat {get}
     // 1. Method to ask the delegate for the height of the image
     func collectionView(_ collectionView:UICollectionView, heightForPhotoAtIndexPath indexPath:IndexPath) -> CGFloat
 }
@@ -20,7 +20,7 @@ public protocol PHParalaxFlowLayoutDelegate: class {
 public class PHParalaxFlowLayout: UICollectionViewLayout {
     
     // paralax Layout Delegate
-    weak var delegate: PHParalaxFlowLayoutDelegate!
+    weak public var delegate: PHParalaxFlowLayoutDelegate!
     
     // Array to keep a cache of attributes.
     fileprivate var cache = [UICollectionViewLayoutAttributes]()

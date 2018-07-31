@@ -1,0 +1,16 @@
+PODS:
+  - PHParalax (1.0.0)
+
+DEPENDENCIES:
+  - PHParalax (from `../PHParalax/`)
+
+EXTERNAL SOURCES:
+  PHParalax:
+    :path: "../PHParalax/"
+
+SPEC CHECKSUMS:
+  PHParalax: 4ec2b2bfb548ec83baaea21e4dcf68407967330e
+
+PODFILE CHECKSUM: a062bc29e67628cb3800e9b6a9b565b537507bf2
+
+COCOAPODS: 1.5.0

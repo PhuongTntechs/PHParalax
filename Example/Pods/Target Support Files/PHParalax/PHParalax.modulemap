@@ -1,0 +1,6 @@
+framework module PHParalax {
+  umbrella header "PHParalax-umbrella.h"
+
+  export *
+  module * { export * }
+}
